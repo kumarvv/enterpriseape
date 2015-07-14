@@ -12,6 +12,8 @@ class InvoicesController < ApplicationController
   # GET /invoices/1
   # GET /invoices/1.json
   def show
+    @invoice = Invoice.find(params[:id])
+    @purchases = @invoice.purchases
   end
 
   # GET /invoices/new
@@ -21,6 +23,7 @@ class InvoicesController < ApplicationController
 
   # GET /invoices/1/edit
   def edit
+    @invoice = Invoice.find(params[:id])
   end
 
   # POST /invoices
