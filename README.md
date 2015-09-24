@@ -1,7 +1,7 @@
 Enterprise Ape
 ==============
 
-Powerful Software 
+Sample Ruby on Rails app
 -----------------
 
 ### Welcome to the repository 
